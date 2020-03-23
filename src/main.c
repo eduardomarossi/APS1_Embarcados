@@ -62,13 +62,6 @@ void sound(int freq, int dur){
 }
 
 void playCallback(void){
-	//if(press == 0){
-		//press = 1;
-		//pio_clear(PLAY_PIO, PLAY_IDX_MASK);
-		//} else{
-		//press = 0;
-		//pio_set(PLAY_PIO, PLAY_IDX_MASK);
-	//}
 	press = 1;
 }
 
@@ -120,6 +113,7 @@ int main (void)
 	// System clock init code
 	board_init();
 	sysclk_init();
+	gfx_mono_ssd1306_init();
 	
 	// Disable watchdog
 	WDT->WDT_MR = WDT_MR_WDDIS;
@@ -129,15 +123,18 @@ int main (void)
 	// Config PIOs init
 	io_init();
 	
-	// Creating songs list
+	// Songs list
 	int numSong = 3;
 	song musics[3];
 	songList(musics);
 
-	// Song variables
+	// Playing song variables
 	int currentSong = 0;
 	int play = 1;
 	int currentNote = 0;
+	
+	// Display
+	gfx_mono_draw_string(musics[currentSong].name, 10, 10, &sysfont);
 	
 	// Loop
 	while(1) {
@@ -155,6 +152,8 @@ int main (void)
 			} else {
 				currentSong = 0;
 			}
+	
+			gfx_mono_draw_string(musics[currentSong].name, 10, 10, &sysfont);
 			selectSong = 0;
 			currentNote = 0;
 		}
