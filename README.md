@@ -1,8 +1,8 @@
-# Resumo :
+ Resumo :
 
 Esse projeto consiste em um sistema embarcado que reproduz uma musica monofonia atravez do controle do `OLED 1 XPLAINED PRO` via interface SPI (Serial Peripheral Interface Bus).
 
-# Materiais:
+ Materiais:
 
     - 1x Microcontrolador SAME70 Xplained
     - 1x OLED1 Xplained
@@ -10,25 +10,25 @@ Esse projeto consiste em um sistema embarcado que reproduz uma musica monofonia 
     - 1x Protoboard
     - 2x Jumpers
 
-# Periféricos uC:
+ Periféricos uC:
 
     - Power Managment Controller (PMC)
     - Serial Protocol Interface (SPI)
     - Parallel Input Output (PIO)
     
-# Ligaçoes eletricas:
+ Ligaçoes eletricas:
 
     - OLED1 Xplained -> EXT1
     - Buzzer (Positivo) -> GND
     - Buzzer (Negativo) -> PD30
         
-# Extrutura do software:  
+ Extrutura do software:  
 
     - main.c: Arquivo responsavel pela logica principal do programa. Nele se define o buzzer, os Leds, os botoes utilizados e as funçoes necessarias para rodar o programa.
     - mario.h, pirates.h, underworld.h : Arquivos que contém as msuicas utilizadas, nele se define as notas, a duração e o nome da música.
     - musics.h: Arquivo que organiza em structs as musicas definidas e as reune na funçao songList().
     
-# Conexão e Funcionalidades:
+ Conexão e Funcionalidades:
 
     - OLED botao 1: conecta-se ao pino 9 (PD28) da placa e é utilizado para escolher a musica que será tocada
     - OLED botao 2: conecta-se ao pino 3 (PC31) da placa e é utilizada para começar e pausar a musica
@@ -36,5 +36,5 @@ Esse projeto consiste em um sistema embarcado que reproduz uma musica monofonia 
  
 
 
-## Resultado
+ Resultado
 
