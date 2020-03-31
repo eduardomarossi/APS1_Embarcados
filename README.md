@@ -1,6 +1,6 @@
 ## Resumo 
 
-Esse projeto consiste em um sistema embarcado que reproduz três musicas monofônicas através do controle do `OLED 1 XPLAINED PRO` via interface SPI (Serial Peripheral Interface Bus).
+Esse projeto consiste em um sistema embarcado que reproduz três músicas monofônicas através do controle do `OLED 1 XPLAINED PRO` via interface SPI (Serial Peripheral Interface Bus).
 
 ## Materiais
 
@@ -37,7 +37,7 @@ Conectar o OLED1 Xplained e o buzzer às entradas do microcontrolador conforme d
 - OLED botão 2: conecta-se ao pino 3 (PC31) do Microcontrolador.
 - LED1 : conecta-se ao PC8 do Microcontrolador.
 
-## Resultado
+## Demonstração
  
 link do vídeo: https://youtu.be/kfLgnO72To8
 
