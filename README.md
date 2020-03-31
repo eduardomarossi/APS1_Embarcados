@@ -4,23 +4,23 @@ Esse projeto consiste em um sistema embarcado que reproduz três musicas monofô
 
 ## Materiais:
 
-    - 1x Microcontrolador SAME70 Xplained
-    - 1x OLED1 Xplained
-    - 1x Buzzer
-    - 1x Protoboard
-    - 2x Jumpers
+- 1x Microcontrolador SAME70 Xplained
+- 1x OLED1 Xplained
+- 1x Buzzer
+- 1x Protoboard
+- 2x Jumpers
     
 ## Periféricos uC:
 
-    - Power Managment Controller (PMC)
-    - Serial Protocol Interface (SPI)
-    - Parallel Input Output (PIO)
+- Power Managment Controller (PMC)
+- Serial Protocol Interface (SPI)
+- Parallel Input Output (PIO)
     
 ## Ligações elétricas:
 
-    - OLED1 Xplained -> EXT1
-    - Buzzer (Positivo) -> GND
-    - Buzzer (Negativo) -> PD30
+- OLED1 Xplained -> EXT1
+- Buzzer (Positivo) -> GND
+- Buzzer (Negativo) -> PD30
     
 ## Como utilizar
 Conectar o OLED1 Xplained e o buzzer às entradas do microcontrolador conforme descritas acima e rodar o arquivo principal do programa ([`main.c`](/src/main.c)). Com isso, o projeto está pronto para reproduzir as músicas escolhidas. Para escolher a música que será tocada, pressionar o botão 1 do OLED1 Xplained e para pausar ou reproduzir a música, pressionar o botão 2 do OLED1 Xplained. Quando a música estiver tocando, o LED irá piscar de acordo com a música.
@@ -33,9 +33,9 @@ Conectar o OLED1 Xplained e o buzzer às entradas do microcontrolador conforme d
     
 ## Conexão do Periférico:
 
- 1. OLED botão 1: conecta-se ao pino 9 (PD28) do Microcontrolador.
- 2. OLED botão 2: conecta-se ao pino 3 (PC31) do Microcontrolador.
- 3. LED1 : conecta-se ao PC8 do Microcontrolador.
+1. OLED botão 1: conecta-se ao pino 9 (PD28) do Microcontrolador.
+2. OLED botão 2: conecta-se ao pino 3 (PC31) do Microcontrolador.
+3. LED1 : conecta-se ao PC8 do Microcontrolador.
 
 ## Resultado
  
