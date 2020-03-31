@@ -2,6 +2,8 @@
 
 Esse projeto consiste em um sistema embarcado que reproduz uma musica monofonia atravez do controle do `OLED 1 XPLAINED PRO` via interface SPI (Serial Peripheral Interface Bus).
 
+link vídeo: https://youtu.be/kfLgnO72To8
+
  Materiais:
 
     - 1x Microcontrolador SAME70 Xplained
